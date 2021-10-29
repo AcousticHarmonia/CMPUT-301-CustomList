@@ -45,7 +45,10 @@ public class MainActivityTest {
 
     @Test
     public void countCityTest(){
-
+        assertEquals(list.countCities(), 0);
+        City city = new City("Halifax", "NS");
+        list.addCity(city);
+        assertEquals(list.countCities(), 1);
     }
 
 }//end MainActivityTest
