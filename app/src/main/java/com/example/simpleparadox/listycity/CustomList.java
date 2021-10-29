@@ -95,7 +95,7 @@ public class CustomList extends ArrayAdapter<City> {
      *      City to delete
      */
     public void delete (City city){
-/*
+
         boolean success = false;
 
         if (cities.contains(city)){
@@ -116,7 +116,7 @@ public class CustomList extends ArrayAdapter<City> {
         if (!success){
             throw new IllegalArgumentException();
         }
-*/
+
     }//end delete
 
     /**
