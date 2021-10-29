@@ -27,6 +27,24 @@ public class MainActivityTest {
         int listSize = list.getCount();
         list.addCity(new City("Halifax", "NS"));
         assertEquals(list.getCount(), listSize + 1);
+    }
+
+    @Test
+    public void hasCityTest(){
+
+    }
+
+    @Test
+    public void deleteCityTest(){
+        City city = new City("Halifax", "NS");
+        list.addCity(city);
+        assertEquals(list.getCount(), 1);
+        list.delete(city);
+        assertEquals(list.getCount(), 0);
+    }
+
+    @Test
+    public void countCityTest(){
 
     }
 

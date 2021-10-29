@@ -65,6 +65,72 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+    /**
+     * Return true or false if the City List contains specific city
+     * @param city
+     *      City to check if it exists in list
+     * @return
+     *      True or false whether city is present in list
+     */
+    public boolean hasCity(City city) {
+/*
+        for (int i = 0; i < cities.size(); i++){
+            if (cities.get(i).getCityName() == city.getCityName()){
+                if (cities.get(i).getProvinceName() == city.getProvinceName()){
+                    return true;
+                }
+            }
+        }//end for
+        if (cities.contains(city)){
+            return true;
+        }
+        return false;
+*/
+        return false;
+    }//end hasCity
+
+    /**
+     * Deletes city from the list if it exists in list
+     * @param city
+     *      City to delete
+     */
+    public void delete (City city){
+/*
+        boolean success = false;
+
+        if (cities.contains(city)){
+            cities.remove(city);
+            success = true;
+        } else {
+            for (int i = 0; i < cities.size(); i++) {
+                if (cities.get(i).getCityName() == city.getCityName()) {
+                    if (cities.get(i).getProvinceName() == city.getProvinceName()) {
+                        cities.remove(cities.get(i));
+                        success = true;
+                        break;
+                    }
+                }
+            }//end for
+        }//end if
+
+        if (!success){
+            throw new IllegalArgumentException();
+        }
+*/
+    }//end delete
+
+    /**
+     * Returns integer of how many cities are in the list
+     * @return
+     *      How many cities are in list
+     */
+    public int countCities() {
+/*
+        return cities.size();
+*/
+        return 0;
+    }//end countCities
+
 }
 
 
