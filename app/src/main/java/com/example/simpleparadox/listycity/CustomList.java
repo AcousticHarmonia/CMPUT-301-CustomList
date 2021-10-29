@@ -62,7 +62,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void addCity(City city){
-        return;
+        cities.add(city);
     }
 
 }
